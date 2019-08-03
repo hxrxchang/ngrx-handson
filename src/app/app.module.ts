@@ -4,6 +4,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from 'src/environments/environment';
 
 import { AppComponent } from './app.component';
+import { RootStoreModule } from './store/root-store.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -12,7 +13,8 @@ import { AppComponent } from './app.component';
     StoreDevtoolsModule.instrument({
       maxAge: 25,
       logOnly: environment.production
-    })
+    }),
+    RootStoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
