@@ -7,9 +7,10 @@ import { environment } from 'src/environments/environment';
 import { AppComponent } from './app.component';
 import { RootStoreModule } from './store/root-store.module';
 import { AddMemoFormComponent } from './components/add-memo-form/add-memo-form.component';
+import { DisplayMemoListComponent } from './components/display-memo-list/display-memo-list.component';
 
 @NgModule({
-  declarations: [AppComponent, AddMemoFormComponent],
+  declarations: [AppComponent, AddMemoFormComponent, DisplayMemoListComponent],
   imports: [
     BrowserModule,
     StoreDevtoolsModule.instrument({
