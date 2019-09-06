@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'ngrx-lecture'`, () => {
+  it(`should have as title 'ngrx-handson'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('ngrx-lecture');
+    expect(app.title).toEqual('ngrx-handson');
   });
 
   it('should render title in a h1 tag', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to ngrx-lecture!');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to ngrx-handson!');
   });
 });
